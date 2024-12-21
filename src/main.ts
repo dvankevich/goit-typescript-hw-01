@@ -7,6 +7,8 @@ import "./basic/2.ts";
 import "./basic/3.ts";
 import "./basic/4.ts";
 import "./basic/5.ts";
+import "./basic/6.ts";
+import "./basic/7.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -17,6 +19,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
     <h1>goit-typescript-hw-01</h1>
+    <p>open console</p>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
