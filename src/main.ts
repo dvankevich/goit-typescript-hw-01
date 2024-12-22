@@ -9,6 +9,7 @@ import "./basic/4.ts";
 import "./basic/5.ts";
 import "./basic/6.ts";
 import "./basic/7.ts";
+import "./generics/1.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
