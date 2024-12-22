@@ -11,6 +11,7 @@ import "./basic/6.ts";
 import "./basic/7.ts";
 import "./generics/1.ts";
 import "./generics/2.ts";
+import "./generics/3.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
