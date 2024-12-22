@@ -64,13 +64,16 @@ async function fetchData<T>(url: string): Promise<T> {
   }
 }
 
-console.group("generics task 1");
 fetchData<User[]>("https://jsonplaceholder.typicode.com/users")
-  .then((data) => console.log(data))
+  .then((data) => {
+    console.group("generics task 1");
+    console.log(data);
+  })
   .catch((error) => console.error(error.message));
 
 fetchData<User[]>("https://jsonplaceholder.typicode.com/users22")
   .then((data) => console.log(data))
-  .catch((error) => console.error(error.message));
-
-console.groupEnd();
+  .catch((error) => {
+    console.error(error.message);
+    console.groupEnd();
+  });
